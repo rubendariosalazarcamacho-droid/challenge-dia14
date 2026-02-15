@@ -13,26 +13,29 @@
     <img class=" max-h-20 max-w-20 absolute top-8" src="../images/logo.svg" alt="logo splitter">
     <div id="contenedorblanco" class="h-[780px] w-full bg-white flex flex-col gap-4 rounded-t-4xl">
 
+        <!--INPUT BILL///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <div class="flex flex-col px-8">
             <p class="text-left text-[18px] font-bold text-[#5e7a7d] mt-8 mb-2">Bill</p>
             <div class="flex flex-row justify-between relative">
                 <img class="absolute top-1/2 -translate-y-1/2 ml-[20px]" src="../images/icon-dollar.svg"
                     alt="signo dollar">
-                <input class="bg-[#F2F8F9] w-full h-[50px] text-right rounded-[10px] text-[30px] font-bold" type="text"
-                    placeholder="142.55 ">
+                <input class="bg-[#F2F8F9] w-full h-[50px] text-right rounded-[10px] text-[30px] font-bold" type="number"
+                    placeholder="0">
             </div>
         </div>
+        <!--SECCION DE LOS BOTONES DE PORCENTAJE////////////////////////////////////////////////////////////////////////////////////-->
         <div class="px-8 flex flex-col">
             <p class="text-left text-[18px] font-bold text-[#5e7a7d] mb-4">Select Tip %</p>
             <div id="grid" class="grid grid-cols-2 gap-4 w-full h-52 text-[30px] text-white font-bold ">
-                <input class="bg-[#00494d] rounded-[10px]" type="button" value="5%">
-                <input class="bg-[#00494d] rounded-[10px]" type="button" value="10%">
-                <input class="bg-[#00494d] rounded-[10px]" type="button" value="15%">
-                <input class="bg-[#00494d] rounded-[10px]" type="button" value="25%">
-                <input class="bg-[#00494d] rounded-[10px]" type="button" value="50%">
-                <input class="bg-[#F2F8F9] rounded-[10px] text-[#5e7a7d]" type="button" value="Custom">
+                <input class="bg-[#00494d] rounded-[10px] cursor-pointer hover:bg-[#9fe7df] hover:text-[#00494d] focus:bg-[#26c0ab] focus:text-[#00494d]" type="button" value="5%">
+                <input class="bg-[#00494d] rounded-[10px] cursor-pointer hover:bg-[#9fe7df] hover:text-[#00494d] focus:bg-[#26c0ab] focus:text-[#00494d]" type="button" value="10%">
+                <input class="bg-[#00494d] rounded-[10px] cursor-pointer hover:bg-[#9fe7df] hover:text-[#00494d] focus:bg-[#26c0ab] focus:text-[#00494d]" type="button" value="15%">
+                <input class="bg-[#00494d] rounded-[10px] cursor-pointer hover:bg-[#9fe7df] hover:text-[#00494d] focus:bg-[#26c0ab] focus:text-[#00494d]" type="button" value="25%">
+                <input class="bg-[#00494d] rounded-[10px] cursor-pointer hover:bg-[#9fe7df] hover:text-[#00494d] focus:bg-[#26c0ab] focus:text-[#00494d]" type="button" value="50%">
+                <input class="bg-[#F2F8F9] rounded-[10px] text-[#5e7a7d] text-center" type="number" placeholder="Custom">
             </div>
         </div>
+        <!--INPUT NUMBER OF PEOPLE/////////////////////////////////////////////////////////////////////////////////////////////////-->
         <div id="people" class="px-8">
             <p class="text-left text-[18px] font-bold text-[#5e7a7d] mb-2">Number of People</p>
             <div class="flex flex-row justify-between relative">
@@ -40,7 +43,7 @@
                     alt="icono persona">
                 <input
                     class="bg-[#F2F8F9] w-full h-[48px] text-right rounded-[10px] text-[30px] font-bold "
-                    type="text" placeholder="5 ">
+                    type="number" placeholder="0">
             </div>
         </div>
         <div class="px-6 mx-7 bg-[#00494d] h-65 flex flex-col py-[25px] rounded-2xl gap-7">
@@ -60,7 +63,7 @@
                 <p class="text-[35px] font-bold text-[#26c0ab]">$32.79</p>
             </div>
 
-            <input class="bg-[#26c0ab] w-full h-[50px] rounded-[10px] text-2xl font-bold text-gray-700" type="button" value="RESET">
+            <input class="bg-[#5e7a7d] w-full h-[50px] rounded-[10px] text-2xl font-bold text-gray-700" type="button" value="RESET">
         </div>
 
     </div>
